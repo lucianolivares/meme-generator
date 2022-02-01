@@ -1,0 +1,17 @@
+* { 
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  margin: 0; /* Remove the tiny space around the edge of the page */
+}
+
+img, video, canvas, audio, iframe, embed, object  { 
+  display: block; /* Switch display mode to block, since that's what we usually want for images. */
+}
+
+.home {
+  padding: 2rem;
+}
