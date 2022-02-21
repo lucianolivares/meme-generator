@@ -12,9 +12,8 @@ export const MemeGrid = styled.div`
   input {
     height: 2rem;
     border-radius: 5px;
-    border-width: 1px;
-    border-color: #D5D4D8;
-    padding-left: 1rem;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
   }
   button {
     grid-column: 1 / 3;
@@ -24,10 +23,46 @@ export const MemeGrid = styled.div`
     font-family: 'Karla';
     font-size: 1.5rem;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+`
+export const MemeContainer = styled.div`
+  position: relative;
+  h4 {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+  }
+  .top {
+    top: 0;
+  }
+  .bottom {
+    bottom: 0;
   }
 
 `
+
 export const MemeImage = styled.img`
   width: 100%;
-
+  border-radius: 5px;
 `

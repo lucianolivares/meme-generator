@@ -13,5 +13,7 @@ img, video, canvas, audio, iframe, embed, object  {
 }
 
 .home {
+  max-width: 800px;
   padding: 2rem;
+  margin: auto;
 }
